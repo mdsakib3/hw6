@@ -1,10 +1,10 @@
-/*Common Css*/
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -16,187 +16,400 @@ a {
 ul {
   list-style-type: none;
 }
-li {
-  display: inline-block;
-}
 
 .container {
   width: 1170px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .row {
   display: flex;
-}
-/*Common Css*/
-
-/*Nav-Start*/
-#navbar {
-  background-color: #02918c;
-}
-
-#navbar .row {
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
-#navbar ul li a {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
+/* Section Info CSS Start */
+.secInfo {
+  padding: 0 140px;
+  text-align: center;
+}
+
+.secInfo h2 {
+  font-size: 46px;
   font-weight: 800;
-  text-align: right;
-  display: inline-block;
-  padding: 25px 25px;
+  text-transform: uppercase;
+  color: #02918c;
+}
+
+.secInfo .ttlBorder {
+  margin: 12px 0 16px;
+}
+
+.secInfo p {
+  font-size: 16px;
+  line-height: 41px;
+  color: #7e8287;
+  margin-bottom: 80px;
+}
+
+.secInfo p span {
+  font-size: 23px;
+  font-weight: 800;
+}
+
+/* /Section Info CSS End */
+
+/* Header Section CSS Start */
+#header {
+  background-color: #02918c;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+#header .logo {
+  width: 230px;
+  margin: 20px 20px 0 0;
+}
+
+#header .menu {
+  width: calc(100% - 250px);
+}
+
+#header .menu ul {
+  float: right;
+}
+
+#header .menu ul li {
+  float: left;
+}
+
+#header .menu ul li a {
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+  padding: 12px 25px;
+  margin: 10px 0;
   transition: 0.5s;
 }
-#navbar ul li a:hover {
+
+#header .menu ul li:hover a {
   background-color: #cfc91d;
   color: black;
+  border-radius: 10px;
 }
-/*Nav-end*/
+/* /Header Section CSS End */
 
-/*Banner-Start*/
+/* Banner Section Start */
 #banner {
-  height: 730px;
-  background-image: url(../img/banner-bg.jpg);
+  background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
+  margin-top: 61px;
+  color: #fff;
   position: relative;
   z-index: 1;
 }
 
-#banner::after {
-  content: "";
+#banner:after {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
-  inset: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-#banner .container {
-  height: 100%;
-}
-
-#banner .row {
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+#banner .bannerContent {
   text-align: center;
-  color: #ffffff;
+  padding: 210px 0px;
 }
-#banner h3 {
+
+#banner .bannerContent h4 {
   font-size: 30px;
   font-weight: 400;
-  line-height: 25px;
 }
 
-#banner h1 {
+#banner .bannerContent h1 {
   font-size: 68px;
   font-weight: 800;
-  text-transform: uppercase;
   letter-spacing: 30px;
-  line-height: 100px;
-}
-
-#banner p {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-#banner img {
-  display: block;
-  margin: 50px auto;
-}
-
-#banner a {
-  color: #0b1016;
-  background-color: #cfc91d;
   text-transform: uppercase;
+}
+
+#banner .bannerContent p {
+  font-size: 18px;
+}
+
+#banner .bannerContent .bannerShape {
+  margin: 38px 0;
+}
+
+#banner .bannerContent a {
   font-size: 14px;
   font-weight: 800;
-  padding: 19px 45px;
-  letter-spacing: 2px;
+  color: #0b1016;
+  background-color: #cfc91d;
+  padding: 14px 57px;
   display: inline-block;
   transition: 0.5s;
 }
 
-#banner a:hover {
-  background-color: rgb(100, 230, 230);
-}
-/*Banner-End*/
-
-#about-me {
-  height: 400px;
-  width: auto;
-}
-
-#about-me h1 {
-  font-size: 46px;
-  font-weight: 800;
-  color: #02918c;
-  text-align: center;
-  margin-top: 100px;
-  transition: 0.5s;
-}
-
-#about-me h1:hover {
-  color: #00D100;
-}
-
-#about-me hr {
-  width: 200px;
-  height: 3px;
-  margin: 30px auto;
-  display: block;
+#banner .bannerContent a:hover {
+  border-radius: 15px;
+  color: #fff;
   background-color: #02918c;
 }
 
-#about-me p {
-  width: 900px;
-  font-size: 16px;
-  line-height: 35px;
-  color: #7e8287;
-  font-weight: 400;
+/* /Banner Section End */
+
+/* About Section CSS Start */
+#about {
+  margin: 80px 0 60px;
   text-align: center;
-  margin: auto;
-}
-#about-me b {
-  font-size: 23px;
 }
 
-#cards {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 150px;
+#about .aboutBox {
+  width: 25%;
+  border-right: 2px solid #5e6767;
+  padding: 35px 62px 55px;
+  margin-bottom: 40px;
 }
 
-#cards .card {
-  width: 160px;
+#about .aboutBox:nth-child(4n),
+#about .aboutBox:last-child {
+  border: none;
 }
 
-#cards img {
-  width: 32px;
-  height: 32px;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-#cards .card h3 {
+#about .aboutBox h3 {
   font-size: 16px;
-  line-height: 23px;
-  color: #7e8287;
   font-weight: 800;
-  text-align: center;
+  color: #7e8287;
+  margin: 30px 0;
 }
 
-#cards .card p {
-  width: 100%;
+#about .aboutBox p {
   font-size: 11px;
   line-height: 21px;
   color: #7e8287;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 10px;
 }
+
+/* /About Section CSS End */
+
+/* Service Section CSS Start */
+#service {
+  background-color: #f0f0e8;
+  background-image: url("../img/serviceBanner.jpg");
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+  padding: 80px 0 25px;
+}
+
+#service:after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  background-color: #f0f0e8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+#service .allService {
+  width: 50%;
+  padding-right: 92px;
+}
+
+#service .allService .secInfo {
+  padding: 0;
+  text-align: left;
+}
+
+#service .allService .secInfo p {
+  margin-bottom: 50px;
+}
+
+#service .serviceItem .serviceBox {
+  width: 50%;
+  padding-right: 40px;
+  margin-bottom: 57px;
+}
+
+#service .serviceItem .serviceBox h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #7e8287;
+  margin: 20px 0;
+}
+
+#service .serviceItem .serviceBox p {
+  font-size: 11px;
+  line-height: 21px;
+  color: #7e8287;
+}
+
+/* /Service Section CSS End */
+
+/* My Work Section CSS Start */
+#myWork {
+  margin: 80px 0 100px;
+}
+
+#myWork .allWork .workItem {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+
+#myWork .allWork .workItem:after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #02918c;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+#myWork .allWork .workItem:hover:after {
+  opacity: 0.85;
+  visibility: visible;
+  border-radius: 0px;
+  width: 90%;
+  height: 90%;
+}
+
+#myWork .allWork .workItem .workImg img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: 0.5s;
+}
+
+#myWork .allWork .workItem:hover .workImg img {
+  transform: scale(1.2);
+}
+
+#myWork .allWork .workItem .workDetails {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 0 50px;
+  color: #fff;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+#myWork .allWork .workItem:hover .workDetails {
+  opacity: 1;
+  visibility: visible;
+}
+
+#myWork .allWork .workItem .workDetails h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 23px;
+  transition: 0.5s;
+}
+
+#myWork .allWork .workItem .workDetails h3:hover {
+  color: #cfc91d;
+}
+#myWork .allWork .workItem .workDetails p {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+/* /My Work Section CSS End */
+
+/* Contact Section CSS Start */
+#contact .contactForm {
+  background-color: #0b0b0b;
+  padding: 63px 112px;
+  text-align: center;
+}
+
+#contact .contactForm form .inputField {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #7e8287;
+  width: 100%;
+  border: none;
+  text-align: center;
+  background: none;
+  border-bottom: 1px solid #898989;
+  padding: 40px 30px 10px;
+  transition: 0.5s;
+}
+
+#contact .contactForm form .inputField:focus {
+  border-bottom: 1px solid #02918c;
+}
+
+#contact .contactForm input.inputField {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#contact .contactForm form textarea {
+  resize: none;
+  margin: 10px 0 90px;
+}
+
+#contact .contactForm form hr {
+  width: 100%;
+  height: 1px;
+  background-color: #898989;
+  border: none;
+}
+
+#contact .contactForm form button.inputField {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #0b1016;
+  background-color: #cfc91d;
+  display: inline-block;
+  width: auto;
+  padding: 15px 65px;
+  margin-top: 65px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#contact .contactForm form button.inputField:hover {
+  border-radius: 10px;
+  color: #fff;
+  background-color: #02918c;
+}
+/* /Contact Section CSS End */
+
+/* Footer Section CSS Start */
+#footer {
+  background-color: #000000;
+  font-size: 14px;
+  color: #7e8287;
+  padding: 40px 0 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* /Footer Section CSS End */

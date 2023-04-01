@@ -3,105 +3,351 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MY Folio</title>
+    <link rel="icon" type="icon/image" href="./img/favicon.png">
 
-    <title>MY FOLIO</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
 
-    <!--nav-start-->
-    <nav id="navbar">
+    <!-- Header Section Start -->
+    <header id="header">
         <div class="container">
             <div class="row">
-                <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Sevices</a></li>
-                    <li><a href="#">My Work</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="Logo"></a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#myWork">My Work</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </nav>
-    <!--nav-end-->
+    </header>
+    <!-- /Header Section End -->
 
-    <!--banner-start-->
+    <!-- Banner Section Start -->
     <section id="banner">
         <div class="container">
-            <div class="row">
-                <div>
-                    <h3>Lorem ipsum dolor sit iusmod tempor</h3>
-                    <h1>incididunt bore</h1>
-                    <p>Orem ipsum dolor sit amet, consectetur</p>
-                    <img src="./img/2nd-backet.png" alt="logo">
-                    <a href="#">know more</a>
+            <div class="bannerContent">
+                <h4>Lorem ipsum dolor sit iusmod tempor</h4>
+                <h1>incididunt bore</h1>
+                <p>Orem ipsum dolor sit amet, consectetur</p>
+                <div class="bannerShape">
+                    <img src="./img/divider.png" alt=".">
                 </div>
+                <a href="#KnowMore">Know More</a>
             </div>
         </div>
     </section>
-    <!--banner-end-->
+    <!-- /Banner Section End -->
 
-    <!--about me-start-->
-    <section id="about-me">
+    <!-- About Section Start -->
+    <section id="about">
         <div class="container">
-            <h1>ABOUT ME</h1>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, <b>quis
-                    nostrud exercitation ullamco</b> laboris nisi ut aliquip ex ea
-                commodo consequat duis aute irure dolor.</p>
-        </div>
-    </section>
-    <!--about me-end-->
-
-    <!--cards-start-->
-    <section class="container">
-        <div class="row">
-            <div id="cards">
-                <div class="card">
-                    <img src="./img/light.png" alt="logo">
-                    <h3>Title goes here</h3>
-                    <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                        et dolorerserss eerhfre mag.</p>
+            <div class="row">
+                <div class="secInfo">
+                    <h2>About Me</h2>
+                    <div class="ttlBorder">
+                        <img src="./img/titleBorder.png" alt=".">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, <span>quis nostrud exercitation
+                            ullamco</span> laboris
+                        nisi ut aliquip ex ea
+                        commodo consequat duis aute irure dolor.
+                    </p>
                 </div>
-                <div class="card">
-                    <img src="./img/pen.png" alt="logo">
-                    <h3>Title goes here</h3>
-                    <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                        et dolorerserss eerhfre mag.</p>
+            </div>
+            <div class="row">
+                <div class="aboutBox">
+                    <div class="aboutIcon">
+                        <img src="./img/aboutIcon-1.png" alt=".">
+                    </div>
+                    <h3>Title Goes Here</h3>
+                    <p>
+                        onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                        et dolorerserss eerhfre mag.
+                    </p>
                 </div>
-                <div class="card">
-                    <img src="./img/gear.png" alt="logo">
-                    <h3>Title goes here</h3>
-                    <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                        et dolorerserss eerhfre mag.</p>
+                <div class="aboutBox">
+                    <div class="aboutIcon">
+                        <img src="./img/aboutIcon-2.png" alt=".">
+                    </div>
+                    <h3>Title Goes Here</h3>
+                    <p>
+                        onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                        et dolorerserss eerhfre mag.
+                    </p>
                 </div>
-                <div class="card">
-                    <img src="./img/laptop.png" alt="logo">
-                    <h3>Title goes here</h3>
-                    <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                        et dolorerserss eerhfre mag.</p>
+                <div class="aboutBox">
+                    <div class="aboutIcon">
+                        <img src="./img/aboutIcon-3.png" alt=".">
+                    </div>
+                    <h3>Title Goes Here</h3>
+                    <p>
+                        onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                        et dolorerserss eerhfre mag.
+                    </p>
+                </div>
+                <div class="aboutBox">
+                    <div class="aboutIcon">
+                        <img src="./img/aboutIcon-4.png" alt=".">
+                    </div>
+                    <h3>Title Goes Here</h3>
+                    <p>
+                        onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                        et dolorerserss eerhfre mag.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- /About Section End -->
 
-    <!--Cards-end-->
+    <!-- Service Section Start -->
+    <section id="service">
+        <div class="container">
+            <div class="row">
+                <div class="allService">
+                    <div class="secInfo">
+                        <h2>Services</h2>
+                        <div class="ttlBorder">
+                            <img src="./img/titleBorder.png" alt=".">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="serviceItem">
+                        <div class="row">
+                            <div class="serviceBox">
+                                <div class="serviceIcon">
+                                    <img src="./img/serviceIcon-1.png" alt=".">
+                                </div>
+                                <h3>Title goes here</h3>
+                                <p>
+                                    Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                    et dolorerserss eerhfre mag.
+                                </p>
+                            </div>
+                            <div class="serviceBox">
+                                <div class="serviceIcon">
+                                    <img src="./img/serviceIcon-2.png" alt=".">
+                                </div>
+                                <h3>Title goes here</h3>
+                                <p>
+                                    Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                    et dolorerserss eerhfre mag.
+                                </p>
+                            </div>
+                            <div class="serviceBox">
+                                <div class="serviceIcon">
+                                    <img src="./img/serviceIcon-3.png" alt=".">
+                                </div>
+                                <h3>Title goes here</h3>
+                                <p>
+                                    Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                    et dolorerserss eerhfre mag.
+                                </p>
+                            </div>
+                            <div class="serviceBox">
+                                <div class="serviceIcon">
+                                    <img src="./img/serviceIcon-4.png" alt=".">
+                                </div>
+                                <h3>Title goes here</h3>
+                                <p>
+                                    Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                    et dolorerserss eerhfre mag.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="serviceImg"></div>
+            </div>
+        </div>
+    </section>
+    <!-- /Service Section End -->
+
+    <!-- My Work Section Start -->
+    <section id="myWork">
+        <div class="secInfo">
+            <h2>My Work</h2>
+            <div class="ttlBorder">
+                <img src="./img/titleBorder.png" alt=".">
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+        <div class="allWork">
+            <div class="row">
+                <!-- Work Item 1 -->
+                <div class="workItem">
+                    <div class="workImg">
+                        <img src="./img/myWork-1.jpg" alt=".">
+                    </div>
+                    <div class="workDetails">
+                        <a href="#">
+                            <h3>Title goes here</h3>
+                        </a>
+                        <p>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.
+                        </p>
+                    </div>
+                </div>
+                <!-- Work Item 2 -->
+                <div class="workItem">
+                    <div class="workImg">
+                        <img src="./img/myWork-2.jpg" alt=".">
+                    </div>
+                    <div class="workDetails">
+                        <a href="#">
+                            <h3>Title goes here</h3>
+                        </a>
+                        <p>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.
+                        </p>
+                    </div>
+                </div>
+                <!-- Work Item 3 -->
+                <div class="workItem">
+                    <div class="workImg">
+                        <img src="./img/myWork-3.jpg" alt=".">
+                    </div>
+                    <div class="workDetails">
+                        <a href="#">
+                            <h3>Title goes here</h3>
+                        </a>
+                        <p>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.
+                        </p>
+                    </div>
+                </div>
+                <!-- Work Item 4 -->
+                <div class="workItem">
+                    <div class="workImg">
+                        <img src="./img/myWork-4.jpg" alt=".">
+                    </div>
+                    <div class="workDetails">
+                        <a href="#">
+                            <h3>Title goes here</h3>
+                        </a>
+                        <p>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.
+                        </p>
+                    </div>
+                </div>
+                <!-- Work Item 5 -->
+                <div class="workItem">
+                    <div class="workImg">
+                        <img src="./img/myWork-5.jpg" alt=".">
+                    </div>
+                    <div class="workDetails">
+                        <a href="#">
+                            <h3>Title goes here</h3>
+                        </a>
+                        <p>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.
+                        </p>
+                    </div>
+                </div>
+                <!-- Work Item 6 -->
+                <div class="workItem">
+                    <div class="workImg">
+                        <img src="./img/myWork-6.jpg" alt=".">
+                    </div>
+                    <div class="workDetails">
+                        <a href="#">
+                            <h3>Title goes here</h3>
+                        </a>
+                        <p>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.
+                        </p>
+                    </div>
+                </div>
+                <!-- Work Item 7 -->
+                <div class="workItem">
+                    <div class="workImg">
+                        <img src="./img/myWork-7.jpg" alt=".">
+                    </div>
+                    <div class="workDetails">
+                        <a href="#">
+                            <h3>Title goes here</h3>
+                        </a>
+                        <p>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.
+                        </p>
+                    </div>
+                </div>
+                <!-- Work Item 8 -->
+                <div class="workItem">
+                    <div class="workImg">
+                        <img src="./img/myWork-8.jpg" alt=".">
+                    </div>
+                    <div class="workDetails">
+                        <a href="#">
+                            <h3>Title goes here</h3>
+                        </a>
+                        <p>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /My Work Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+        <div class="secInfo">
+            <h2>Contact Me</h2>
+            <div class="ttlBorder">
+                <img src="./img/titleBorder.png" alt=".">
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+        </div>
+        <div class="contactForm">
+            <div class="container">
+                <form>
+                    <input class="inputField" type="text" id="name" name="name" placeholder="Name">
+                    <input class="inputField" type="email" id="email" name="email" placeholder="Email">
+                    <textarea rows="1" class="inputField" placeholder="Message"></textarea>
+                    <hr>
+                    <button class="inputField" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- /Contact Section End -->
 
 
-
-
-
-
+    <!-- Footer Section Start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyrightText">
+                <p>&copy; Myfolio</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer Section End -->
 
 </body>
 
